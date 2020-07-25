@@ -2,6 +2,13 @@ module lib
 import term
 
 
+pub fn list_plugins(plugs []string) {
+   println(term.green("All plugins:"))
+   print("")
+   for el in plugs{
+      println(term.cyan("- "+el))
+   }
+}
 pub fn search(pack string,packs []string){
      if pack in packs{
         print(term.bold(term.green("Package "+pack+" exists")))
@@ -12,7 +19,7 @@ pub fn search(pack string,packs []string){
 
 pub fn help() {
    println("")
-   println(term.green("lib.help :"))
+   println(term.green("help :"))
    println(term.yellow("|-------------------------------------------------------------------+"))
    println(term.yellow("+----> Get a package:  ./vlite get -p <Name of the package> "))
    println("|                                                                   +")
