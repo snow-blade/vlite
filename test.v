@@ -15,7 +15,7 @@ struct Plug {
 fn main(){
    mut args := vargs.new(os.args, 1)
    args.parse()
-   json_file := os.read_file("conf2.json") or {println("error: \nfailed to read the file") return }
+   json_file := os.read_file("conf.json") or {println("error: \nfailed to read the file") return }
    decoded:=json.decode(Plug,json_file) or {
       println(term.red('error: \nfailed to open or parse the \' conf.json\' file'))
       return

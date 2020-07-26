@@ -1,6 +1,6 @@
 module lib
 import term
-
+import time
 pub fn list_plugins(plugs []string) {
    println(term.green("All plugins:"))
    print("")
@@ -16,8 +16,9 @@ pub fn search(pack string,packs []string){
         println(term.bold(term.red("Package "+pack+" does not exist in remote repo")))
         for el in packs{
            if pack in el{
-              println(term.yellow("Maybe you meant: "+el))
-           }
+              println(term.yellow("Suggesting: "+el))
+              time.sleep(1)
+            }
            
         }
      }
