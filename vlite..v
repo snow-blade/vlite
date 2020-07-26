@@ -27,16 +27,16 @@ fn main(){
       //i encountered a little problem importing this from utils.v so, i decided to let it as it is.
    "get"{   
       if args.options['p'] in plugins_array{
-         req:=http.get("https://raw.githubusercontent.com/rxi/lite-plugins/master/plugins/"+args.options['p']+".lua") or {
-            println(term.bold(term.red("error: \nfailed to connect to the enpoint, check that your connection is open")))
-            return
+            req:=http.get("https://raw.githubusercontent.com/rxi/lite-plugins/master/plugins/"+args.options['p']+".lua") or {
+                 println(term.bold(term.red("error: \nfailed to connect to the enpoint, check that your connection is open")))
+                 return
             }
-         mut fi:= os.create(decoded.lite_path+"data/plugins/"+args.options['p']+'.lua') or {
-            println("failed to create "+decoded.lite_path+"data/plugins/"+args.options['p']+'.lua')
-            return 
+            mut fi:= os.create(decoded.lite_path+"data/plugins/"+args.options['p']+'.lua') or {
+               println("failed to create "+decoded.lite_path+"data/plugins/"+args.options['p']+'.lua')
+              return 
             }
-         fi.write(req.text) 
-         print(req.text)
+            fi.write(req.text) 
+            print(req.text)
             }
       else{
          println(term.bold(term.red("Error:\nPackage not found,")))
@@ -55,9 +55,9 @@ fn main(){
    "banner"{
         print(lib.banner())
    }
-else{
-   println(term.bold(term.red("error: \nCommand not found")))
-   lib.help()
+   else{
+      println(term.bold(term.red("error: \nCommand not found")))
+      lib.help()
       }
    }
 }

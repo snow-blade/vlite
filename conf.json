@@ -1,5 +1,5 @@
 {
-	"version": "0.0.5",
+	"version": "0.5",
 	"author": "freeman",
 	"lite_path": "/home/free/lite/",
 	"plugins": "autoinsert,autowrap,bigclock,bracketmatch,centerdoc,colorpreview,copyfilelocation,datetimestamps,detectindent,dragdropselected,drawwhitespace,eval,exec,ghmarkdown,gitstatus,gofmt,hidelinenumbers,hidestatus,inanimate,indentguide,language_angelscript,language_batch,language_cmake,language_cpp,language_csharp,language_elixir,language_d,language_elm,language_fe,language_fennel,language_gdscript,language_glsl,language_go,language_hlsl,language_hs,language_java,language_jiyu,language_make,language_meson,language_odin,language_php,language_pico8,language_psql,language_rust,language_sh,language_tex,language_wren,lfautoinsert,linecopypaste,lineguide,macmodkeys,markers,motiontrail,openfilelocation,openselected,scale,scalestatus,selectionhighlight,sort,spellcheck,titleize,togglesnakecamel,unboundedscroll,workspace"
