@@ -45,7 +45,7 @@ pub fn help() {
    print(term.bold(term.green(banner())))
    println("")
    println(term.green("help :"))
-   println("|-------------------------------------------------------------------+")
+   println("|")
    println(term.yellow("+----> Get a package:  ./vlite get -p <Name of the package> "))
    println("|                                                                   +")
    println(term.yellow("+----> List packages: ./vlite list"))
