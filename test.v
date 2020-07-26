@@ -52,6 +52,9 @@ fn main(){
    "help"{
          lib.help()
       }
+   "banner"{
+        print(lib.banner())
+   }
 else{
    println(term.bold(term.red("error: \nCommand not found")))
    lib.help()

@@ -1,6 +1,19 @@
 module lib
 import term
 import time
+
+pub fn banner() string {
+   return "
+██╗   ██╗██╗     ██╗████████╗███████╗
+██║   ██║██║     ██║╚══██╔══╝██╔════╝
+██║   ██║██║     ██║   ██║   █████╗  
+╚██╗ ██╔╝██║     ██║   ██║   ██╔══╝  
+ ╚████╔╝ ███████╗██║   ██║   ███████╗
+  ╚═══╝  ╚══════╝╚═╝   ╚═╝   ╚══════╝
+a ✨✨✨ package manager for the lite text editor  \n                                "
+}
+
+
 pub fn list_plugins(plugs []string) {
    println(term.green("All plugins:"))
    print("")
@@ -8,6 +21,7 @@ pub fn list_plugins(plugs []string) {
       println(term.cyan("- "+el))
    }
 }
+
 pub fn search(pack string,packs []string){
      if pack in packs{
         print(term.bold(term.green("Package "+pack+" exists")))
@@ -25,9 +39,10 @@ pub fn search(pack string,packs []string){
 }
 
 pub fn help() {
+   print(term.bold(term.green(banner())))
    println("")
    println(term.green("help :"))
-   println(term.yellow("|-------------------------------------------------------------------+"))
+   println("|-------------------------------------------------------------------+")
    println(term.yellow("+----> Get a package:  ./vlite get -p <Name of the package> "))
    println("|                                                                   +")
    println(term.yellow("+----> List packages: ./vlite list"))
