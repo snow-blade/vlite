@@ -1,7 +1,6 @@
 module lib
 import term
 
-
 pub fn list_plugins(plugs []string) {
    println(term.green("All plugins:"))
    print("")
@@ -14,7 +13,13 @@ pub fn search(pack string,packs []string){
         print(term.bold(term.green("Package "+pack+" exists")))
      }
      else{
-        print(term.bold(term.red("Package "+pack+" does not exist")))
+        println(term.bold(term.red("Package "+pack+" does not exist in remote repo")))
+        for el in packs{
+           if pack in el{
+              println(term.yellow("Maybe you meant: "+el))
+           }
+           
+        }
      }
 }
 
@@ -30,5 +35,5 @@ pub fn help() {
    println("|                                                                   +")
    println(term.yellow("+----> Search for a package: ./vlite search -p <Name of the package>"))
    println("|                                                                   +")
-   println(term.yellow("+-------------------------------------------------------------------+"))
+   println(term.yellow("+-------------------------------------------------------------------+"))  
 }

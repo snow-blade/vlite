@@ -39,6 +39,7 @@ fn main(){
          print(req.text)
             }
       else{
+         println(term.bold(term.red("Error:\nPackage not found,")))
          lib.help()
         }
       }
