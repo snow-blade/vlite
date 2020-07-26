@@ -10,7 +10,10 @@ pub fn banner() string {
 ╚██╗ ██╔╝██║     ██║   ██║   ██╔══╝  
  ╚████╔╝ ███████╗██║   ██║   ███████╗
   ╚═══╝  ╚══════╝╚═╝   ╚═╝   ╚══════╝
-a ✨✨✨ package manager for the lite text editor  \n                                "
+             
+   _  _   _  | 
+a (_ (_) (_) | package manager for the lite text editor  \n                                "      
+ 
 }
 
 
