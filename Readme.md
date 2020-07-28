@@ -33,6 +33,13 @@ v vlite.v
 PRs are more than welcome, if you don't know yet vlang, good news you can learn it in under an hour at: [https://github.com/vlang/v/blob/master/doc/docs.md](https://github.com/vlang/v/blob/master/doc/docs.md)
 
 I tried to make the code as obvious as possible for any contributor, so you should find your way very easily.
+
+## Running tests:
+
+To check that everything is up and running, just use:
+
+` v test utils_test.v `
+
 ## License
 
 Licensed under [MIT](LICENSE)
