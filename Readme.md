@@ -22,7 +22,7 @@ On debianbased linux distros run: `sudo apt install libssl-dev`
 
 On rheel distros: `sudo dnf install libssl-devel`
 
-On windows,mac and arch-based distros: You can skip these steps.
+On windows,mac and arch-based distros: You can skip this steps.
 
 Then modify conf.json for the lite path, by replacing the field of lite_path with your lite path
 
