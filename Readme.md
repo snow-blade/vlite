@@ -31,6 +31,7 @@ To build and run, type:
 v vlite.v
 ./vlite
 ```
+Then update your conf.json file by adding the lite directory
 > Always be sure to have the conf.json file in the same directory as the binary
 ## Contributing
 PRs are more than welcome, if you don't know yet vlang, good news you can learn it in under an hour at: [https://github.com/vlang/v/blob/master/doc/docs.md](https://github.com/vlang/v/blob/master/doc/docs.md)
