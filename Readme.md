@@ -22,7 +22,7 @@ On debianbased linux distros run: `sudo apt install libssl-dev`
 
 On rheel distros: `sudo dnf install libssl-devel`
 
-On windows,mac and arch-based distros: You can skip these steps.
+On windows,mac and arch-based distros: You can skip this steps.
 
 Then modify conf.json for the lite path, by replacing the field of lite_path with your lite path
 
@@ -31,6 +31,16 @@ To build and run, type:
 v vlite.v
 ./vlite
 ```
+Then update your conf.json file by editing the lite directory like this:
+```v
+{
+	"version": "0.5",
+	"author": "freeman",
+	"lite_path": "/home/free/lite/",   // <- modify this to point to your lite location
+	....
+}
+```
+> Always be sure to have the conf.json file in the same directory as the binary
 ## Contributing
 PRs are more than welcome, if you don't know yet vlang, good news you can learn it in under an hour at: [https://github.com/vlang/v/blob/master/doc/docs.md](https://github.com/vlang/v/blob/master/doc/docs.md)
 
