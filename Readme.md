@@ -12,7 +12,15 @@ So, following the lite philosophy of being lightweight and blazing fast, i start
 
 Also, the though of making a package manager that automates for me the process of installing new packages for the lite text editor was also a good learning opportunity of the [V](https://vlang.io) programming language , it's not really complete and i had to do some small hack for this to work perfectly.
 ## Install
-Go to the [release](https://github.com/snow-blade/vlite/releases) page and download the package corresponding to your os.
+Go to the [release](https://github.com/snow-blade/vlite/releases) page and download the package corresponding to your os and modify the conf.json file after extracting the archive like this:
+```v
+{
+	"version": "0.5",
+	"author": "freeman",
+	"lite_path": "/home/free/lite/",   // <- modify this to point to your lite location
+	....
+}
+```
 ## Build
 > ignore the following step if you used the precompiled releases.
 
