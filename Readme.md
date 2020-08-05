@@ -18,7 +18,7 @@ If you don't have vlang installed yet, follow the installation steps of vlang:
 - [Macos/linux](https://github.com/vlang/v/wiki/Installing-a-C-compiler-on-Linux-and-macOS)
 - [Windows](https://github.com/vlang/v/wiki/Installing-a-C-compiler-on-Windows)
 
-On debianbased linux distros run: `sudo apt install libssl-dev`
+On debian based linux distros run: `sudo apt install libssl-dev`
 
 On rheel distros: `sudo dnf install libssl-devel`
 
